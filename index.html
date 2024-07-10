@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosponstive Dashboard</title>
+
+    <!-- Marterial Icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <!-- CSS file -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./img/logo.png" />
+            <h2>管理平台</h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+        </div>
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-symbols-outlined"> dashboard </span>
+            <h3>仪表盘</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> person </span>
+            <h3>用户</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> contract </span>
+            <h3>订单</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> trending_up </span>
+            <h3>分析</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> mail </span>
+            <h3>信息</h3>
+            <!-- 信息记录数量 -->
+            <span class="message-count">26</span>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> contract_edit </span>
+            <h3>产品</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> report </span>
+            <h3>报告</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> settings </span>
+            <h3>设置</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> add </span>
+            <h3>添加产品</h3>
+          </a>
+          <a href="#">
+            <span class="material-symbols-outlined"> logout </span>
+            <h3>退出</h3>
+          </a>
+        </div>
+      </aside>
+      <!----------------- END OF ASIDE ----------------->
+      <main>
+        <h1>仪表盘</h1>
+
+        <div class="date"><input type="date" /></div>
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-outlined"> monitoring </span>
+            <div class="middle">
+              <div class="left">
+                <h3>营业额</h3>
+                <h1>￥30,213</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">过去24小时</small>
+          </div>
+          <!-- END OF SALES -->
+          <div class="expenses">
+            <span class="material-symbols-outlined"> grouped_bar_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>开支</h3>
+                <h1>￥19,780</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>62%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">过去24小时</small>
+          </div>
+          <!-- END OF EXPENSES -->
+          <div class="income">
+            <span class="material-symbols-outlined"> stacked_line_chart </span>
+            <div class="middle">
+              <div class="left">
+                <h3>净利润</h3>
+                <h1>￥10,433</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>47%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">过去24小时</small>
+          </div>
+          <!-- END OF INCOME -->
+        </div>
+        <!------------ END OF INCOME ------------>
+
+        <div class="recent-orders">
+          <h2>近期订单</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>产品名称</th>
+                <th>产品数量</th>
+                <th>支付状态</th>
+                <th>当前状态</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+              <tr>
+                <td>product1</td>
+                <td>2430</td>
+                <td>预付款</td>
+                <td class="warning">等待</td>
+                <td class="primary">这里有一段详细介绍</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">展开</a>
+        </div>
+      </main>
+
+      <!------------ END OF MAIN ------------>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-symbols-outlined active"> light_mode </span>
+            <span class="material-symbols-outlined"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>你好, <strong>Kurt</strong></p>
+              <small class="text-muted">管理员</small>
+            </div>
+            <div class="profile-photo">
+              <img src="img/profile-1.jpg" alt="Kurt 管理员头像" />
+            </div>
+          </div>
+        </div>
+        <!------ END OF TOP ------>
+
+        <div class="recent-updates">
+          <h2>最近信息</h2>
+          <div class="updates">
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./img/profile-3.jpg" alt="头像" />
+              </div>
+              <div class="message">
+                <p>
+                  <strong>小赵</strong>: 收到AA建材批发王哥的订单,
+                  请求使用导弹炮轰炸
+                </p>
+                <small class="text-muted">4 分钟</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./img/profile-4.jpg" alt="头像" />
+              </div>
+              <div class="message">
+                <p>
+                  <strong>Ericw</strong>: 收到AA建材批发王哥的订单,
+                  请求使用导弹炮轰炸
+                </p>
+                <small class="text-muted">5 分钟</small>
+              </div>
+            </div>
+
+            <div class="update">
+              <div class="profile-photo">
+                <img src="./img/profile-2.jpg" alt="头像" />
+              </div>
+              <div class="message">
+                <p>
+                  <strong>熬夜大王</strong>: 收到AA建材批发王哥订单,
+                  请求使用导弹炮轰炸
+                </p>
+                <small class="text-muted">2 分钟</small>
+              </div>
+            </div>
+          </div>
+          <!------ END OF RECENT UPDATES ------>
+          <div class="sales-analytics">
+            <h2>交易分析</h2>
+            <div class="item online">
+              <div class="icon">
+                <span class="material-symbols-outlined"> credit_card </span>
+              </div>
+              <div class="right">
+                <div class="info">
+                  <h3>线上交易</h3>
+                  <small class="text-muted">过去24小时</small>
+                </div>
+                <h5 class="success">+39%</h5>
+                <h3>3849</h3>
+              </div>
+            </div>
+            <div class="item offline">
+              <div class="icon">
+                <span class="material-symbols-outlined"> local_mall </span>
+              </div>
+              <div class="right">
+                <div class="info">
+                  <h3>线下交易</h3>
+                  <small class="text-muted">过去24小时</small>
+                </div>
+                <h5 class="danger">-17%</h5>
+                <h3>1100</h3>
+              </div>
+            </div>
+            <div class="item customers">
+              <div class="icon">
+                <span class="material-symbols-outlined"> person </span>
+              </div>
+              <div class="right">
+                <div class="info">
+                  <h3>新客户</h3>
+                  <small class="text-muted">过去24小时</small>
+                </div>
+                <h5 class="success">+25%</h5>
+                <h3>849</h3>
+              </div>
+            </div>
+            <div class="item add-product">
+              <div>
+                <span class="material-symbols-outlined"> add </span>
+                <h3>添加商品</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
